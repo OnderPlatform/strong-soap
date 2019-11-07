@@ -248,15 +248,15 @@ class NamespaceContext {
    */
   registerNamespace(prefix, nsURI) {
     var mapping;
-    if (!prefix) {
-      prefix = this.generatePrefix();
-    } else {
+    // if (!prefix) {
+    //  prefix = this.generatePrefix();
+    // } else {
       mapping = this.currentScope.getNamespaceMapping(prefix);
       if (mapping && mapping.uri === nsURI) {
         // Found an existing mapping
         return mapping;
       }
-    }
+    // }
     if (this.getNamespaceURI(prefix)) {
       // The prefix is already mapped to a different namespace
       prefix = this.generatePrefix();
