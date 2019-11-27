@@ -1,5 +1,5 @@
 {
-  "name": "strong-soap",
+  "name": "@onderPlatform/strong-soap",
   "version": "1.21.0",
   "description": "A minimal node SOAP client",
   "engines": {
