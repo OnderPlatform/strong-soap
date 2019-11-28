@@ -161,6 +161,7 @@ class HttpClient {
     var ntlmSecurity = this.options.NTLMSecurity;
     var ntlmAuth = self.isNtlmAuthRequired(ntlmSecurity, options.method);
     if (!ntlmAuth) {
+      console.log('strong-soap: Doing request with options', JSON.stringify(options))
       req = self._request(options, function (err, res, body) {
         if (err) {
           return callback(err);
