@@ -1,6 +1,6 @@
 {
   "name": "@onder-platform/strong-soap",
-  "version": "1.21.0",
+  "version": "1.21.0-m1",
   "description": "A minimal node SOAP client",
   "engines": {
     "node": ">=8.11.1"
